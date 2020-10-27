@@ -6,7 +6,7 @@ $("#submit").click(function(e){
 		name : $("#name").val(),
 		address : $("#address").val(),
 		phoneNo : $("#phone").val(),
-		id : $("#name").val()
+		id : $("#id").val()
 	}
 	
 	var cnvrtStrinJason = JSON.stringify(ID)
@@ -14,7 +14,8 @@ $("#submit").click(function(e){
 	
 	var url = $("#form").attr("action")
 
-	$.post(url,ID,function(){
-		alert("sumited")
-	})
+	//$.post(url,ID,function(){
+		//alert("sumited")
+
+	//})
 })
