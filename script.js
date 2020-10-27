@@ -8,14 +8,22 @@ $("#submit").click(function(e){
 		phoneNo : $("#phone").val(),
 		id : $("#id").val()
 	}
-	
-	var cnvrtStrinJason = JSON.stringify(ID)
+	if (ID.id == "") {
+		alert("please fill the ID no")
+	}
+	else{var cnvrtStrinJason = JSON.stringify(ID)
 	console.log(cnvrtStrinJason)
 	
 	var url = $("#form").attr("action")
+	localStorage.setItem(ID.id,cnvrtStrinJason)
 
 	//$.post(url,ID,function(){
 		//alert("sumited")
 
 	//})
+	}
 })
+
+var respondData = localStorage.getItem("data")
+
+console.log(JSON.parse(respondData))
