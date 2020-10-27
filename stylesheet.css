@@ -1,0 +1,14 @@
+
+#name, #phone, #id, #address{
+	box-sizing: border-box;
+	margin: 10px;
+	position: relative;
+	margin-left: 10px;
+
+}
+
+#address{
+	height: 50px;
+	width: 500px;
+	resize: none;
+}
